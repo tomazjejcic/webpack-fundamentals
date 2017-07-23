@@ -1,0 +1,21 @@
+{
+  "name": "2_web_fundamentals",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:dev": "npm run build -- --env.env=dev",
+    "build:prod": "npm run build -- --env.env=prod",
+    "build:log": "npm run build -- --env.foo=1 --env.bar=2",
+    "watch": "npm run build -- --watch",
+    "build": "webpack --verbose --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^3.3.0",
+    "webpack-dev-server": "^2.6.0",
+    "webpack-merge": "^4.1.0"
+  }
+}
